@@ -12,5 +12,9 @@ export class PaginationDto {
     @Min(0)
     offset: number;
 
+    public getDescription() {
+        return `Instance of PaginationDto with these values: limit: ${ this.limit }, ofset: ${ this.offset }`;
+    }
+
 
 }
